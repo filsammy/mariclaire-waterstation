@@ -1,57 +1,73 @@
-Quick Guide to Run /water-admin (this is the web-first development for Admin and its dashboard)
+# Water Station Admin Dashboard
 
-- cd water-admin
-- npm install
-- npm run dev
+## Quick Start
 
-📱 Key Features for Your Water Station App
+```bash
+cd water-admin
+npm install
+npm run dev
+```
 
-For Customers:
+## Overview
 
-Create account / login (phone or email)
+This is the web-first development environment for the Water Station Admin Dashboard. It provides a comprehensive interface for managing orders, deliveries, and analytics.
 
-Order water refills (choose container type, quantity, delivery time)
+---
 
-Track orders / delivery status
+## Key Features
 
-Payment (COD, GCash, etc.)
+### Customer Portal
 
-Order history
+- **Account Management** – Create account/login via phone or email
+- **Order Placement** – Choose container type, quantity, and delivery time
+- **Real-time Tracking** – Monitor order and delivery status
+- **Payment Options** – Cash on Delivery (COD), GCash, and more
+- **Order History** – View past orders and receipts
 
-For Admin:
+### Admin Dashboard
 
-Manage orders (accept/reject/mark delivered)
+- **Order Management** – Accept, reject, or mark orders as delivered
+- **Delivery Monitoring** – Track all active deliveries in real-time
+- **Driver Management** – Assign and manage delivery staff
+- **Analytics** – View total orders, revenue, and performance metrics
+- **Notifications** – Receive alerts for new orders
 
-Monitor deliveries
+### Delivery Staff Portal _(Optional Mobile View)_
 
-Manage drivers
+- **Order Assignment** – View assigned delivery tasks
+- **Status Updates** – Mark orders as picked up, in transit, or delivered
 
-View analytics (total orders, income, etc.)
+---
 
-Notifications for new orders
+## Deployment
 
-For Delivery Staff (optional mobile view):
+| Platform       | Deployment Target                    |
+| -------------- | ------------------------------------ |
+| **Mobile App** | Google Play Store / Apple App Store  |
+| **Web App**    | Firebase Hosting, Vercel, or Netlify |
 
-View assigned orders
+---
 
-Update delivery status
+## Development Roadmap
 
-🌐 Deployment
+1. **Design Phase** – Create UI mockups for customer views and admin dashboard
+2. **Backend Setup** – Configure Firebase or Node.js backend
+3. **Mobile Development** – Build customer app with React Native
+4. **Web Development** – Build admin dashboard with React.js (shared backend)
+5. **Integration Testing** – Test cross-platform functionality
+6. **Deployment** – Set up hosting and publish to app stores
 
-Mobile app: Publish via Google Play Store / Apple App Store
+---
 
-Web app: Deploy via Firebase Hosting, Vercel, or Netlify
+## Tech Stack
 
-🛠 Roadmap
+- **Frontend**: React.js (Admin), React Native (Mobile)
+- **Backend**: Firebase / Node.js
+- **Database**: Firestore / MongoDB
+- **Authentication**: Firebase Auth / JWT
 
-Start with UI mockups (what the customer sees, admin dashboard)
+---
 
-Set up backend (Firebase or Node.js)
+## License
 
-Build mobile app (React Native) — focus on customer experience
-
-Build admin website (React.js) — use same backend
-
-Test cross-platform integration
-
-Add deployment + hosting
+MIT
