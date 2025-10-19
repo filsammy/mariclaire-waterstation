@@ -1,9 +1,11 @@
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
 import Dashboard from "@/pages/Dashboard";
+import { ToastProvider } from "@/context/ToastContext";
 
 export default function App() {
   return (
+    <ToastProvider>
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
       <Sidebar />
@@ -18,5 +20,6 @@ export default function App() {
         </main>
       </div>
     </div>
+    </ToastProvider>
   );
 }
